@@ -5,10 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
 		<title>Pro Investor Accaunt Home</title>
-		<script type="module" crossorigin="" src="./js/account-home.min.js?v=1758036458204"></script>
+		<script type="module" crossorigin="" src="./js/account-home.min.js?v=1758047906154"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758036458204">
-		<link rel="stylesheet" crossorigin="" href="./css/account-home.min.css?v=1758036458204">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758047906154">
+		<link rel="stylesheet" crossorigin="" href="./css/account-home.min.css?v=1758047906154">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -38,7 +38,7 @@
 			<main class="page accaunt">
 				<div class="accaunt__container">
 					<div class="accaunt__body">
-						<nav data-fls-shadow="" data-fls-aside="" class="aside">
+						<nav data-fls-block="" data-fls-aside="" class="aside">
 							<ul class="aside__list">
 								<li class="aside__item">
 									<a href="#" class="aside__link aside__link--active aside__link--icon-home">Главная</a>
@@ -62,27 +62,53 @@
 							<h3 class="accaunt__title accaunt__title--title-25">Быстрые действия</h3>
 							<div class="accaunt__home home">
 								<div class="home__action action-home">
-									<a href="#" data-fls-shadow="" class="action-home__item action-home__item--title-20">
+									<a href="#" data-fls-block="" class="action-home__item action-home__item--title-20">
 										Пополнить баланс
 										<span>Удобно без комиссий</span>
 									</a>
-									<a href="#" data-fls-shadow="" class="action-home__item action-home__item--title-20">
+									<a href="#" data-fls-block="" class="action-home__item action-home__item--title-20">
 										Открыть счет
 										<span>Практически мнгновенно</span>
 									</a>
-									<a href="#" data-fls-shadow="" class="action-home__item action-home__item--title-20">
+									<a href="#" data-fls-block="" class="action-home__item action-home__item--title-20">
 										Обмен валюты
 										<br>
 										и перевод
 									</a>
 								</div>
-								<div class="home__main main-home">
+								<div data-fls-block="" class="home__main main-home">
 									<div class="main-home__tag">Всего на торговых счетах</div>
 									<div class="main-home__label">
 										<span>25 560</span>
 										RUB
 									</div>
-									<div class="main-home__number number"></div>
+									<div data-fls-block="" data-fls-number="" class="main-home__number number">
+										<div class="number__main number__main--icon-rub">
+											<div class="number__content">
+												<h5 class="number__title number__title--title-20">Номер счета</h5>
+												<div class="number__code">
+													<span class="number__input">23245998839284</span>
+													<button type="button" class="number__copy number__copy--icon-copy"></button>
+												</div>
+											</div>
+										</div>
+										<div class="number__info">
+											<div class="number__label">
+												Доход
+												<span>:</span>
+											</div>
+											<div class="number__result">
+												<div class="number__span number__span--title-20">
+													<span>5000</span>
+													RUB
+												</div>
+												<div class="number__span number__span--title-20">
+													<span>20</span>
+													%
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
