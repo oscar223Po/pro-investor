@@ -1,4 +1,3 @@
-import "./app.min.js";
 function updatePadding() {
   const header = document.querySelector(".aside");
   const content = document.querySelector(".page");

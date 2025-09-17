@@ -1,4 +1,3 @@
-import "./app.min.js";
 function headerScroll() {
   const header = document.querySelector("[data-fls-header-scroll]");
   const headerShow = header.hasAttribute("data-fls-header-scroll-show");
