@@ -24,6 +24,10 @@
   background: transparent;
   outline: 0.0625rem solid #fff;
 }
+.button--gray {
+  color: #242424;
+  background: #ebebeb;
+}
 .button--fw {
   width: 100%;
 }
@@ -62,6 +66,9 @@
   .button--border-white:hover {
     color: #242424;
     background: #fff;
+  }
+  .button--gray:hover {
+    color: #fff;
   }
   .edit:hover {
     color: #34c746;

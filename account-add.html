@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
+		<title>Pro Investor Accaunt Add</title>
+		<script type="module" crossorigin="" src="./js/account-add.min.js?v=1758198034395"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/functions.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/form.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/filter.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/aside.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758198034395">
+		<link rel="stylesheet" crossorigin="" href="./css/form.min.css?v=1758198034395">
+		<link rel="stylesheet" crossorigin="" href="./css/filter.min.css?v=1758198034395">
+		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1758198034395">
+		<link rel="stylesheet" crossorigin="" href="./css/account-add.min.css?v=1758198034395">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1758198034395">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header-accaunt="" class="header-accaunt">
+				<div class="header-accaunt__container">
+					<div class="header-accaunt__body">
+						<a href="accaunt-home.html" class="header-accaunt__logo">
+							<img src="./assets/img/logo.svg" alt="Logo">
+						</a>
+						<div class="header-accaunt__actions">
+							<div class="header-accaunt__settings">
+								<a href="account-setting.html" class="--icon-settings"></a>
+							</div>
+							<div class="header-accaunt__profile">
+								<a href="" class="--icon-profile">
+									<div class="header-accaunt__content-profile">
+										<span>Васильев Василий</span>
+										<span>Квалифицированный управляющий</span>
+									</div>
+								</a>
+							</div>
+							<button data-fls-button="" type="button" class="header-accaunt__logout header-accaunt__logout--icon-log-out"></button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page account">
+				<div class="account__container">
+					<div class="account__body">
+						<nav data-fls-block="" data-fls-aside="" class="aside">
+							<ul class="aside__list">
+								<li class="aside__item">
+									<a href="account-home.html" class="aside__link aside__link--icon-home">Главная</a>
+								</li>
+								<li class="aside__item">
+									<a href="account-expense.html" class="aside__link aside__link--active aside__link--icon-wallet">Счета</a>
+								</li>
+								<li class="aside__item">
+									<a href="#" class="aside__link aside__link--icon-history">История</a>
+								</li>
+								<li class="aside__item">
+									<a href="#" class="aside__link aside__link--icon-withdraw">Вывести</a>
+								</li>
+							</ul>
+							<div class="aside__actions">
+								<a href="" class="aside__action aside__action--icon-withdraw">Вывести деньги</a>
+								<a href="" class="aside__action aside__action--icon-deposit">Пополнить баланс</a>
+							</div>
+						</nav>
+						<div class="account__content">
+							<h3 class="account__title account__title--title-25">Добавление счета</h3>
+							<div class="account__add add">
+								<ul data-fls-filter="" class="add__filter filter">
+									<li>
+										<a href="#" class="filter__link filter__link--active">RUB</a>
+									</li>
+									<li>
+										<a href="#" class="filter__link">CNY</a>
+									</li>
+									<li>
+										<a href="#" class="filter__link">EUR</a>
+									</li>
+									<li>
+										<a href="#" class="filter__link">USD</a>
+									</li>
+								</ul>
+								<form data-fls-form="" class="add__form" action="#">
+									<div data-fls-block="" class="add__inner">
+										<div class="add__select">
+											<div class="add__label-select">Банк</div>
+											<select name="form[]" data-fls-select="" data-fls-select-modif="bank">
+												<option value="1" selected>Другой банк</option>
+												<option value="2">Сбербанк</option>
+												<option value="3">Т-Банк</option>
+												<option value="4">Альфа-Банк</option>
+											</select>
+										</div>
+										<div class="add__toggle">
+											<div class="add__switch"></div>
+											<span>Заполнить вручную</span>
+										</div>
+										<div class="add__inputs">
+											<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Введите БИК или название банка" class="add__input input">
+											<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Номер счета" class="add__input input">
+											<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Название банка" class="add__input input input--disable">
+											<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="ИНН" class="add__input input input--disable">
+											<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="КПП" class="add__input input input--disable">
+											<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Корп. счет банка" class="add__input input input--disable">
+										</div>
+									</div>
+									<button type="submit" data-fls-button="" class="add__button button">Добавить счет</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

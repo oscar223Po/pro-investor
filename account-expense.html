@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
+		<title>Pro Investor Accaunt Expense</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1758198034398"></script>
+		<script type="module" crossorigin="" src="./js/functions.min.js?v=1758198034398"></script>
+		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1758198034398"></script>
+		<script type="module" crossorigin="" src="./js/filter.min.js?v=1758198034398"></script>
+		<script type="module" crossorigin="" src="./js/aside.min.js?v=1758198034398"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758198034398">
+		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1758198034398">
+		<link rel="stylesheet" crossorigin="" href="./css/filter.min.css?v=1758198034398">
+		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1758198034398">
+		<link rel="stylesheet" crossorigin="" href="./css/account-expense.min.css?v=1758198034398">
+		<link rel="stylesheet" crossorigin="" href="./css/number.min.css?v=1758198034398">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1758198034398">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header-accaunt="" class="header-accaunt">
+				<div class="header-accaunt__container">
+					<div class="header-accaunt__body">
+						<a href="accaunt-home.html" class="header-accaunt__logo">
+							<img src="./assets/img/logo.svg" alt="Logo">
+						</a>
+						<div class="header-accaunt__actions">
+							<div class="header-accaunt__settings">
+								<a href="account-setting.html" class="--icon-settings"></a>
+							</div>
+							<div class="header-accaunt__profile">
+								<a href="" class="--icon-profile">
+									<div class="header-accaunt__content-profile">
+										<span>Васильев Василий</span>
+										<span>Квалифицированный управляющий</span>
+									</div>
+								</a>
+							</div>
+							<button data-fls-button="" type="button" class="header-accaunt__logout header-accaunt__logout--icon-log-out"></button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page account">
+				<div class="account__container">
+					<div class="account__body">
+						<nav data-fls-block="" data-fls-aside="" class="aside">
+							<ul class="aside__list">
+								<li class="aside__item">
+									<a href="account-home.html" class="aside__link aside__link--icon-home">Главная</a>
+								</li>
+								<li class="aside__item">
+									<a href="account-expense.html" class="aside__link aside__link--active aside__link--icon-wallet">Счета</a>
+								</li>
+								<li class="aside__item">
+									<a href="#" class="aside__link aside__link--icon-history">История</a>
+								</li>
+								<li class="aside__item">
+									<a href="#" class="aside__link aside__link--icon-withdraw">Вывести</a>
+								</li>
+							</ul>
+							<div class="aside__actions">
+								<a href="" class="aside__action aside__action--icon-withdraw">Вывести деньги</a>
+								<a href="" class="aside__action aside__action--icon-deposit">Пополнить баланс</a>
+							</div>
+						</nav>
+						<div class="account__content">
+							<h3 class="account__title account__title--title-25">Счета</h3>
+							<div data-fls-tabs="" data-fls-tabs-animate="" class="account__tabs tabs">
+								<nav data-fls-tabs-titles="" class="tabs__navigation">
+									<button type="button" class="tabs__title --tab-active">Торговые счета</button>
+									<button type="button" class="tabs__title">Банковские счета</button>
+								</nav>
+								<div data-fls-tabs-body="" class="tabs__content">
+									<div class="tabs__body expense-market">
+										<div class="expense-market__list">
+											<a href="#" data-fls-block="" class="expense-market__item expense-market__item--icon-deposit">
+												<span>Пополнить баланс</span>
+											</a>
+											<a href="#" data-fls-block="" class="expense-market__item expense-market__item--icon-account">
+												<span>Открыть счет</span>
+											</a>
+											<a href="#" data-fls-block="" class="expense-market__item expense-market__item--icon-usd">
+												<span>Обмен валюты и перевод</span>
+											</a>
+											<a href="#" data-fls-block="" class="expense-market__item expense-market__item--icon-withdraw">
+												<span>Вывести</span>
+											</a>
+										</div>
+										<div data-fls-block="" data-fls-number="" class="expense-market__number number">
+											<div class="number__label">Всего на торговых счетах</div>
+											<div class="number__total">
+												<span>25 560</span>
+												RUB
+											</div>
+											<div data-fls-block="" class="number__count count">
+												<div class="count__main count__main--icon-rub">
+													<div class="count__content">
+														<h5 class="count__title count__title--title-20">Номер счета</h5>
+														<div class="count__code">
+															<span>23245998839284</span>
+															<button type="button" class="count__copy count__copy--icon-copy"></button>
+														</div>
+													</div>
+												</div>
+												<div class="count__info">
+													<div class="count__subttile">
+														Доход
+														<span>:</span>
+													</div>
+													<div class="count__result">
+														<div class="count__span count__span--title-20">
+															<span>5000</span>
+															RUB
+														</div>
+														<div class="count__span count__span--title-20">
+															<span>20</span>
+															%
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__body expense-bank">
+										<a href="account-add.html" data-fls-button="" class="expense-bank__button button">Добавить счет</a>
+										<div data-fls-block="" class="expense-bank__content">
+											<ul data-fls-filter="" class="expense-bank__filter filter">
+												<li>
+													<a href="#" class="filter__link filter__link--active">Все</a>
+												</li>
+												<li>
+													<a href="#" class="filter__link">RUB</a>
+												</li>
+												<li>
+													<a href="#" class="filter__link">CNY</a>
+												</li>
+												<li>
+													<a href="#" class="filter__link">EUR</a>
+												</li>
+												<li>
+													<a href="#" class="filter__link">USD</a>
+												</li>
+											</ul>
+											<div class="expense-bank__counts">
+												<a href="#" data-fls-block="" data-fls-number="" class="count count--hover">
+													<div class="count__main count__main--icon-rub">
+														<div class="count__content">
+															<h5 class="count__title count__title--title-20">346727288589824657</h5>
+															<div class="count__name">Сбербанк</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
