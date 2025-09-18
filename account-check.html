@@ -4,14 +4,15 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
-		<title>Pro Investor Accaunt Balance</title>
-		<script type="module" crossorigin="" src="./js/account-balance.min.js?v=1758208240317"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
-		<link rel="modulepreload" crossorigin="" href="./js/functions.min.js">
-		<link rel="modulepreload" crossorigin="" href="./js/aside.min.js">
+		<title>Pro Investor Accaunt Check</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1758208240317"></script>
+		<script type="module" crossorigin="" src="./js/functions.min.js?v=1758208240317"></script>
+		<script type="module" crossorigin="" src="./js/form.min.js?v=1758208240317"></script>
+		<script type="module" crossorigin="" src="./js/aside.min.js?v=1758208240317"></script>
 		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758208240317">
+		<link rel="stylesheet" crossorigin="" href="./css/form.min.css?v=1758208240317">
 		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1758208240317">
-		<link rel="stylesheet" crossorigin="" href="./css/account-balance.min.css?v=1758208240317">
+		<link rel="stylesheet" crossorigin="" href="./css/account-check.min.css?v=1758208240317">
 		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1758208240317">
 	</head>
 	<body>
@@ -63,41 +64,32 @@
 							</div>
 						</nav>
 						<div class="account__content">
-							<h3 class="account__title account__title--title-25">Пополнение баланса</h3>
-							<div data-fls-block="" data-fls-maxwidth="" class="account__balance balance">
-								<h4 class="balance__title balance__title--title-20">Выберите способ пополнения</h4>
-								<div data-fls-spollers="" class="balance__spollers spollers-balance">
-									<details data-fls-block="" data-fls-spollers-open="" class="spollers-balance__item">
-										<summary class="spollers-balance__title spollers-balance__title--icon-arrow-min">
-											<span class="--icon-account">Выставить счет</span>
-										</summary>
-										<div class="spollers-balance__text">
-											<p>Комиссия: рассчитывается вашим банком</p>
-											<p>Валюта: любая валюта</p>
-											<p>Срок зачисления: 1-2 рабочих дня</p>
-											<p>
-												Пополнение с электронных кошельков невозможно, используйте банковские счета для перевода средств
-											</p>
+							<h3 class="account__title account__title--title-25">Пополнение по счету</h3>
+							<form action="#" data-fls-form="" data-fls-maxwidth="" class="account__check check">
+								<div data-fls-block="" class="check__block">
+									<h4 class="check__subtitle check__subtitle--title-20">Счет пополнения</h4>
+									<div class="check__inputs">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Номер счета" class="input">
+										<div class="check__plsdata plsdata">
+											<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" class="plsdata__input input">
+											<div class="plsdata__content">
+												Уже есть на счете:
+												<b>8000 RUB</b>
+											</div>
 										</div>
-									</details>
-									<details data-fls-block="" data-fls-spollers-open="" class="spollers-balance__item">
-										<summary class="spollers-balance__title spollers-balance__title--icon-arrow-min">
-											<span>
-												<img src="./assets/img/sbp.svg" alt="Icon">
-												СБП
-											</span>
-										</summary>
-										<div class="spollers-balance__text">
-											<p>Комиссия: 0%</p>
-											<p>Валюта: RUB</p>
-											<p>Срок зачисления: несколько минут</p>
-											<p>
-												Пополнение с электронных кошельков невозможно, используйте банковские счета для перевода средств
-											</p>
-										</div>
-									</details>
+									</div>
 								</div>
-							</div>
+								<div data-fls-block="" class="check__block">
+									<h4 class="check__subtitle check__subtitle--title-20">Счет списания</h4>
+									<div class="check__text">
+										<p>Номер банковского счета, с которого вы планируетет отправить средства</p>
+									</div>
+									<div class="check__inputs">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Номер банковского счета" class="input">
+									</div>
+								</div>
+								<button type="submit" data-fls-button="" class="check__button button">Сформировать счет</button>
+							</form>
 						</div>
 					</div>
 				</div>

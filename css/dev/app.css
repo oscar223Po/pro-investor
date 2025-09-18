@@ -397,6 +397,11 @@ body {
     padding-block: clamp( 1.375rem , 1.01785714285625rem  +  1.7857142857vw , 2.625rem );
   }
 }
+@media (min-width: 47.99875em){
+  [data-fls-maxwidth] {
+    max-width: 35.9375rem;
+  }
+}
 @media (min-width: 48em) and (max-width: 90em){
   [class*=__container] {
     padding-left: clamp( 0.9375rem , -0.8482142857125rem  +  3.7202380952vw , 2.5rem );

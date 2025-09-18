@@ -7,6 +7,26 @@ document.querySelectorAll(".password__eye").forEach((button) => {
     button.classList.toggle("active", isPassword);
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".plsdata__input").forEach((input) => {
+    const content = input.closest(".plsdata").querySelector(".plsdata__content");
+    input.addEventListener("focus", () => {
+      content.classList.add("disable");
+    });
+    input.addEventListener("blur", () => {
+      if (input.value.trim() === "") {
+        content.classList.remove("disable");
+      }
+    });
+    input.addEventListener("input", () => {
+      if (input.value.trim() !== "") {
+        content.classList.add("disable");
+      } else {
+        content.classList.remove("disable");
+      }
+    });
+  });
+});
 let formValidate = {
   getErrors(form) {
     let error = 0;

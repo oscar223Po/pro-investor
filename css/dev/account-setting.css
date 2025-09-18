@@ -3,7 +3,6 @@
 .setting-privacy {
   padding: 0.9375rem;
   background: #fff;
-  max-width: 35.9375rem;
 }
 .setting-privacy__block:not(:last-child) {
   margin-bottom: 1.25rem;
@@ -45,7 +44,6 @@
 .setting-password {
   padding: 0.9375rem;
   background: #fff;
-  max-width: 35.9375rem;
 }
 .setting-password > * {
   margin-bottom: 1.25rem;
