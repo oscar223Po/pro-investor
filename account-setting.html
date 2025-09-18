@@ -4,13 +4,15 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
-		<title>Pro Investor Accaunt Home</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1758115976439"></script>
-		<script type="module" crossorigin="" src="./js/aside.min.js?v=1758115976439"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758115976439">
-		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1758115976439">
-		<link rel="stylesheet" crossorigin="" href="./css/account-setting.min.css?v=1758115976439">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1758115976439">
+		<title>Pro Investor Accaunt Setting</title>
+		<script type="module" crossorigin="" src="./js/account-setting.min.js?v=1758180120752"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/functions.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/aside.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758180120752">
+		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1758180120752">
+		<link rel="stylesheet" crossorigin="" href="./css/account-setting.min.css?v=1758180120752">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1758180120752">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -22,7 +24,7 @@
 						</a>
 						<div class="header-accaunt__actions">
 							<div class="header-accaunt__settings">
-								<a href="" class="--icon-settings"></a>
+								<a href="account-setting.html" class="--icon-settings"></a>
 							</div>
 							<div class="header-accaunt__profile">
 								<a href="" class="--icon-profile">
@@ -37,9 +39,9 @@
 					</div>
 				</div>
 			</header>
-			<main class="page accaunt">
-				<div class="accaunt__container">
-					<div class="accaunt__body">
+			<main class="page account">
+				<div class="account__container">
+					<div class="account__body">
 						<nav data-fls-block="" data-fls-aside="" class="aside">
 							<ul class="aside__list">
 								<li class="aside__item">
@@ -60,9 +62,94 @@
 								<a href="" class="aside__action aside__action--icon-deposit">Пополнить баланс</a>
 							</div>
 						</nav>
-						<div class="accaunt__content">
-							<h3 class="accaunt__title accaunt__title--title-25">Васильев Василий Васильевич</h3>
-							<div class="accaunt__home setting"></div>
+						<div class="account__content">
+							<h3 class="account__title account__title--title-25">Васильев Василий Васильевич</h3>
+							<div data-fls-tabs="" data-fls-tabs-animate="" class="account__tabs tabs">
+								<nav data-fls-tabs-titles="" class="tabs__navigation">
+									<button type="button" class="tabs__title --tab-active">Персональные данные</button>
+									<button type="button" class="tabs__title">Настройки</button>
+								</nav>
+								<div data-fls-tabs-body="" class="tabs__content">
+									<div data-fls-block="" class="tabs__body setting-privacy">
+										<div class="setting-privacy__block">
+											<div class="setting-privacy__head">
+												<h3 class="setting-privacy__title setting-privacy__title--title-20">Персональные данные</h3>
+												<button type="button" data-fls-button="" class="setting-privacy__edit edit edit--icon-edit">
+													<span>Редактировать</span>
+												</button>
+											</div>
+											<div class="setting-privacy__items">
+												<div class="setting-privacy__item">
+													<div class="setting-privacy__label">ФИО</div>
+													<div class="setting-privacy__info">
+														<span>Васильев Василий Васильевич</span>
+													</div>
+												</div>
+												<div class="setting-privacy__item">
+													<div class="setting-privacy__label">Мобильный телефон</div>
+													<div class="setting-privacy__info">
+														<span>+7 930 423 77 21</span>
+													</div>
+												</div>
+												<div class="setting-privacy__item">
+													<div class="setting-privacy__label">E-mail</div>
+													<div class="setting-privacy__info">
+														<span>denisovaip@internet.ru</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="setting-privacy__block">
+											<div class="setting-privacy__head">
+												<h3 class="setting-privacy__title setting-privacy__title--title-20">Паспортные данные</h3>
+											</div>
+											<div class="setting-privacy__items">
+												<div class="setting-privacy__item">
+													<div class="setting-privacy__label">Серия и номер паспорта</div>
+													<div class="setting-privacy__info">
+														<span>Данные о паспорте</span>
+													</div>
+												</div>
+												<div class="setting-privacy__item">
+													<div class="setting-privacy__label">Кем выдан</div>
+													<div class="setting-privacy__info">
+														<span>Данные о паспорте</span>
+													</div>
+												</div>
+												<div class="setting-privacy__item">
+													<div class="setting-privacy__label">Дата выдачи</div>
+													<div class="setting-privacy__info">
+														<span>Данные о паспорте</span>
+													</div>
+												</div>
+												<div class="setting-privacy__item">
+													<div class="setting-privacy__label">Код подразделения</div>
+													<div class="setting-privacy__info">
+														<span>Данные о паспорте</span>
+													</div>
+												</div>
+												<div class="setting-privacy__item">
+													<div class="setting-privacy__label">Пол</div>
+													<div class="setting-privacy__info">
+														<span>Данные</span>
+													</div>
+												</div>
+												<div class="setting-privacy__item">
+													<div class="setting-privacy__label">Дата рождения</div>
+													<div class="setting-privacy__info">
+														<span>01.01.01</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-fls-block="" class="tabs__body setting-password">
+										<h3 class="setting-password__title setting-password__title--title-20">Настройки входа</h3>
+										<div class="setting-password__label setting-password__label--title-18">Вход по паролю</div>
+										<a href="code.html" data-fls-button="" class="setting-password__button button">Именить пароль</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

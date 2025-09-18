@@ -49,9 +49,12 @@
   .aside {
     left: 0;
     bottom: 0;
+    z-index: 40;
     width: 100%;
     padding: 0.9375rem;
     position: fixed;
+    border-radius: 0;
+    box-shadow: rgba(14, 63, 126, 0.03) 0rem 0rem 0rem 0.0625rem, rgba(42, 51, 69, 0.03) 0rem -0.0625rem 0.0625rem -0.03125rem, rgba(42, 51, 70, 0.03) 0rem -0.1875rem 0.1875rem -0.09375rem, rgba(42, 51, 70, 0.03) 0rem -0.375rem 0.375rem -0.1875rem, rgba(14, 63, 126, 0.03) 0rem -0.75rem 0.75rem -0.375rem, rgba(14, 63, 126, 0.03) 0rem -1.5rem 1.5rem -0.75rem;
   }
   .aside__list {
     row-gap: 0.9375rem;
