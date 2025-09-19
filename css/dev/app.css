@@ -71,7 +71,7 @@ h6 {
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("../assets/fonts/iconfont.woff2?3fd9f7bb7c9642024dfc5f399f1fdd3b") format("woff2"); 
+	src: url("../assets/fonts/iconfont.woff2?1a685a3611c6ef694661e786f09cb478") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -201,6 +201,7 @@ body {
 }
 .account__content {
   width: 100%;
+  min-width: 0;
   margin: 0 auto;
   max-width: 58.875rem;
 }

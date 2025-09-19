@@ -4,17 +4,14 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
-		<title>Pro Investor Accaunt Check</title>
+		<title>Pro Investor Accaunt Data</title>
 		<script type="module" crossorigin="" src="./js/app.min.js?v=1758273119606"></script>
 		<script type="module" crossorigin="" src="./js/input.min.js?v=1758273119606"></script>
-		<script type="module" crossorigin="" src="./js/functions.min.js?v=1758273119606"></script>
-		<script type="module" crossorigin="" src="./js/form.min.js?v=1758273119606"></script>
 		<script type="module" crossorigin="" src="./js/aside.min.js?v=1758273119606"></script>
 		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758273119606">
 		<link rel="stylesheet" crossorigin="" href="./css/input.min.css?v=1758273119606">
-		<link rel="stylesheet" crossorigin="" href="./css/form.min.css?v=1758273119606">
 		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1758273119606">
-		<link rel="stylesheet" crossorigin="" href="./css/account-check.min.css?v=1758273119606">
+		<link rel="stylesheet" crossorigin="" href="./css/account-data.min.css?v=1758273119606">
 		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1758273119606">
 	</head>
 	<body>
@@ -51,10 +48,10 @@
 									<a href="account-home.html" class="aside__link aside__link--icon-home">Главная</a>
 								</li>
 								<li class="aside__item">
-									<a href="account-expense.html" class="aside__link aside__link--active aside__link--icon-wallet">Счета</a>
+									<a href="account-expense.html" class="aside__link aside__link--icon-wallet">Счета</a>
 								</li>
 								<li class="aside__item">
-									<a href="account-history.html" class="aside__link aside__link--icon-history">История</a>
+									<a href="account-history.html" class="aside__link aside__link--active aside__link--icon-history">История</a>
 								</li>
 								<li class="aside__item">
 									<a href="#" class="aside__link aside__link--icon-withdraw">Вывести</a>
@@ -66,32 +63,35 @@
 							</div>
 						</nav>
 						<div class="account__content">
-							<h3 class="account__title account__title--title-25">Пополнение по счету</h3>
-							<form action="#" data-fls-form="" data-fls-maxwidth="" class="account__check check">
-								<div data-fls-block="" class="check__block">
-									<h4 class="check__subtitle check__subtitle--title-20">Счет пополнения</h4>
-									<div class="check__inputs">
-										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Номер счета" class="input">
-										<div class="check__plsdata plsdata">
-											<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" class="plsdata__input input">
-											<div class="plsdata__content">
-												Уже есть на счете:
-												<b>8000 RUB</b>
-											</div>
-										</div>
+							<h3 class="account__title account__title--title-25">Васильев Василий Васильевич</h3>
+							<div data-fls-block="" data-fls-maxwidth="" class="account__data data">
+								<div class="data__block">
+									<div class="data__head">
+										<h4 class="data__title data__title--title-20">Персональные данные</h4>
+										<button type="button" data-fls-button="" class="data__edit edit edit--icon-edit">
+											<span>Редактировать</span>
+										</button>
+									</div>
+									<div class="data__inputs">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="ФИО" class="input">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Мобильный телефон" class="input">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="E-mail" class="input">
 									</div>
 								</div>
-								<div data-fls-block="" class="check__block">
-									<h4 class="check__subtitle check__subtitle--title-20">Счет списания</h4>
-									<div class="check__text">
-										<p>Номер банковского счета, с которого вы планируетет отправить средства</p>
+								<div class="data__block">
+									<div class="data__head">
+										<h4 class="data__title data__title--title-20">Паспортные данные</h4>
 									</div>
-									<div class="check__inputs">
-										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Номер банковского счета" class="input">
+									<div class="data__inputs">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Серия и номер паспорта" class="input">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Кем выдан" class="input">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Дата выдачи" class="input">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Код подразделения" class="input">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Пол" class="input">
+										<input data-fls-input="" required autocomplete="off" type="text" name="text" data-error="Error" placeholder="Дата рождения" class="input">
 									</div>
 								</div>
-								<button type="submit" data-fls-button="" class="check__button button">Сформировать счет</button>
-							</form>
+							</div>
 						</div>
 					</div>
 				</div>

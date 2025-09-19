@@ -1,5 +1,6 @@
 import "./app.min.js";
 import "./scroll.min.js";
+import "./input.min.js";
 import "./form.min.js";
 /* empty css           */
 import "./auth.min.js";

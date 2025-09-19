@@ -33,6 +33,24 @@
   font-size: 2rem;
   color: #2a77ef;
 }
+.count__main--icon-condition::before {
+  width: 2rem;
+  color: #fff;
+  height: 2rem;
+  display: flex;
+  font-size: 0.875rem;
+  align-items: center;
+  border-radius: 0.625rem;
+  justify-content: center;
+}
+.count__main--condition-income::before {
+  background: #2a77ef;
+}
+.count__main--condition-withdraw::before {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  background: #747474;
+}
 .count__content {
   padding-top: 0.25rem;
 }
@@ -46,7 +64,25 @@
   align-items: center;
 }
 .count__name {
+  gap: 0.25rem;
+  display: flex;
   color: #747474;
+  align-items: center;
+  justify-items: start;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+.count__name::before {
+  width: 1.0625rem;
+  color: #fff;
+  height: 1.0625rem;
+  display: flex;
+  font-size: 0.5rem;
+  padding-bottom: 0.0625rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #34c746;
 }
 .count__copy {
   color: #bebebe;
@@ -70,6 +106,17 @@
 }
 .count__span {
   font-weight: 500;
+}
+.count__result {
+  display: flex;
+  font-weight: 600;
+  margin: 0 0 0 auto;
+}
+.count__result--income {
+  color: #34c746;
+}
+.count__result--withdraw {
+  color: #242424;
 }
 @media (max-width: 20em){
   .number__total {
