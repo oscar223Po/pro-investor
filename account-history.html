@@ -4,13 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
-		<title>Pro Investor Accaunt Home</title>
+		<title>Pro Investor Accaunt Add</title>
 		<script type="module" crossorigin="" src="./js/app.min.js?v=1758264625350"></script>
 		<script type="module" crossorigin="" src="./js/aside.min.js?v=1758264625350"></script>
 		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758264625350">
 		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1758264625350">
-		<link rel="stylesheet" crossorigin="" href="./css/account-home.min.css?v=1758264625350">
-		<link rel="stylesheet" crossorigin="" href="./css/number.min.css?v=1758264625350">
+		<link rel="stylesheet" crossorigin="" href="./css/account-history.min.css?v=1758264625350">
 		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1758264625350">
 	</head>
 	<body>
@@ -44,13 +43,13 @@
 						<nav data-fls-block="" data-fls-aside="" class="aside">
 							<ul class="aside__list">
 								<li class="aside__item">
-									<a href="account-home.html" class="aside__link aside__link--active aside__link--icon-home">Главная</a>
+									<a href="account-home.html" class="aside__link aside__link--icon-home">Главная</a>
 								</li>
 								<li class="aside__item">
 									<a href="account-expense.html" class="aside__link aside__link--icon-wallet">Счета</a>
 								</li>
 								<li class="aside__item">
-									<a href="account-history.html" class="aside__link aside__link--icon-history">История</a>
+									<a href="account-history.html" class="aside__link aside__link--active aside__link--icon-history">История</a>
 								</li>
 								<li class="aside__item">
 									<a href="#" class="aside__link aside__link--icon-withdraw">Вывести</a>
@@ -62,58 +61,8 @@
 							</div>
 						</nav>
 						<div class="account__content">
-							<h3 class="account__title account__title--title-25">Быстрые действия</h3>
-							<div class="account__home home">
-								<div class="home__action action-home">
-									<a href="#" data-fls-block="" class="action-home__item action-home__item--title-20">
-										Пополнить баланс
-										<span>Удобно без комиссий</span>
-									</a>
-									<a href="#" data-fls-block="" class="action-home__item action-home__item--title-20">
-										Открыть счет
-										<span>Практически мнгновенно</span>
-									</a>
-									<a href="#" data-fls-block="" class="action-home__item action-home__item--title-20">
-										Обмен валюты
-										<br>
-										и перевод
-									</a>
-								</div>
-								<div data-fls-block="" data-fls-number="" class="home__number number">
-									<div class="number__label">Всего на торговых счетах</div>
-									<div class="number__total">
-										<span>25 560</span>
-										RUB
-									</div>
-									<div data-fls-block="" class="number__count count">
-										<div class="count__main count__main--icon-rub">
-											<div class="count__content">
-												<h5 class="count__title count__title--title-20">Номер счета</h5>
-												<div class="count__code">
-													<span>23245998839284</span>
-													<button type="button" class="count__copy count__copy--icon-copy"></button>
-												</div>
-											</div>
-										</div>
-										<div class="count__info">
-											<div class="count__subttile">
-												Доход
-												<span>:</span>
-											</div>
-											<div class="count__result">
-												<div class="count__span count__span--title-20">
-													<span>5000</span>
-													RUB
-												</div>
-												<div class="count__span count__span--title-20">
-													<span>20</span>
-													%
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+							<h3 class="account__title account__title--title-25">История</h3>
+							<div class="account__history history"></div>
 						</div>
 					</div>
 				</div>
