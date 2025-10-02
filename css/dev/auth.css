@@ -93,10 +93,10 @@
 .login__content > *:last-child {
   margin-bottom: 0;
 }
-.login__label {
+.login__label--phone {
   position: relative;
 }
-.login__label img {
+.login__label--phone img {
   top: 0;
   bottom: 0;
   left: 0.625rem;

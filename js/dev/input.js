@@ -1,4 +1,4 @@
-document.querySelectorAll(".password__eye").forEach((button) => {
+document.querySelectorAll(".passcode__eye").forEach((button) => {
   button.addEventListener("click", () => {
     const input = button.previousElementSibling;
     const isPassword = input.getAttribute("type") === "password";
