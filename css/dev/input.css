@@ -25,15 +25,17 @@ textarea {
   border: 0.0625rem solid #999;
 }
 .input--number {
-  font-size: 0.9375rem;
-  min-height: 3rem;
+  padding-left: 2.5rem;
   position: relative;
   background: #f2f2f2;
-  padding: 0 0.9375rem 0 2.5rem;
   border: 0.0625rem solid #e8e8e8;
 }
-.input--password {
-  padding: 0 3.0625rem 0 0.9375rem;
+.input--sm {
+  font-size: 0.9375rem;
+  min-height: 3rem;
+}
+.input--passcode {
+  padding-right: 3.0625rem;
 }
 .input--disable {
   pointer-events: none;

@@ -8,7 +8,6 @@
 		<script type="module" crossorigin="" src="./js/app.min.js?v=1759389312791"></script>
 		<script type="module" crossorigin="" src="./js/scroll.min.js?v=1759389312791"></script>
 		<script type="module" crossorigin="" src="./js/input.min.js?v=1759389312791"></script>
-		<script type="module" crossorigin="" src="./js/mask.min.js?v=1759389312791"></script>
 		<script type="module" crossorigin="" src="./js/functions.min.js?v=1759389312791"></script>
 		<script type="module" crossorigin="" src="./js/form.min.js?v=1759389312791"></script>
 		<script type="module" crossorigin="" src="./js/auth.min.js?v=1759389312791"></script>
@@ -34,15 +33,14 @@
 				<div class="auth__container">
 					<div class="auth__body login">
 						<form data-fls-form="" action="#" method="#" data-fls-block="" class="login__content">
-							<h4 class="login__title login__title--title-25">Вход</h4>
-							<div class="login__label login__label--phone">
-								<img src="./assets/img/ru.svg" alt="Flag">
-								<input required data-fls-input="" data-fls-input-mask="+7 (999) 999 - 99 - 99" autocomplete="off" type="tel" name="tel" placeholder="+7 (999) 999 - 99 - 99" class="input input--sm input--number">
+							<h4 class="login__title login__title--title-25">Регистрация</h4>
+							<div class="login__label login__label--mail">
+								<input required data-fls-input="" autocomplete="off" type="email" name="email" placeholder="Email" class="input input--sm">
 							</div>
-							<button type="submit" data-fls-button="" class="login__button button button--fw">Войти</button>
-							<a href="#" class="login__error">Не могу войти</a>
+							<button type="submit" data-fls-button="" class="login__button button button--fw">Продолжить</button>
+							<a href="register-phone.html" class="login__error">Регистрация по СМС</a>
 						</form>
-						<a href="register-mail.html" class="login__regist">Регистрация</a>
+						<a href="login-phone.html" class="login__regist">Войти</a>
 					</div>
 				</div>
 			</main>
