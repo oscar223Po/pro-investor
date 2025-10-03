@@ -6,7 +6,6 @@ import "./form.min.js";
 import "./filter.min.js";
 import "./aside.min.js";
 import "./functions.min.js";
-import "./_functions.min.js";
 document.addEventListener("DOMContentLoaded", () => {
   const toggleWrapper = document.querySelector(".add__toggle");
   const toggle = toggleWrapper.querySelector(".add__switch");
