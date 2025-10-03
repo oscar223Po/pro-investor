@@ -2,10 +2,8 @@ import "./app.min.js";
 import "./tabs.min.js";
 import { b as bodyLock, F as FLS, a as bodyUnlock, c as bodyLockStatus } from "./functions.min.js";
 import "./input.min.js";
-import "./form.min.js";
 /* empty css           */
 import "./aside.min.js";
-import "./_functions.min.js";
 class Popup {
   constructor(options) {
     let config = {
