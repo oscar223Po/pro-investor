@@ -5,6 +5,7 @@ import "./input.min.js";
 import "./form.min.js";
 /* empty css           */
 import "./aside.min.js";
+import "./_functions.min.js";
 class Popup {
   constructor(options) {
     let config = {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");* {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");* {
 	padding: 0rem;
 	margin: 0rem;
 	border: 0rem;
@@ -331,6 +331,11 @@ body {
   }
   [class*=__container] {
     padding-right: 0.9375rem;
+  }
+}
+@media (max-width: 47.99875em){
+  .account__title--none {
+    display: none;
   }
 }
 @media (max-width: 29.99875em){

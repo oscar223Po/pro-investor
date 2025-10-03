@@ -1,5 +1,5 @@
 import { F as FLS, f as slideUp, h as slideToggle } from "./functions.min.js";
-import { f as formValidate } from "./form.min.js";
+import { f as formValidate } from "./_functions.min.js";
 class SelectConstructor {
   constructor(props, data = null) {
     let defaultConfig = {
