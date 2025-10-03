@@ -5,16 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
 		<title>Pro Investor — Setting</title>
-		<script type="module" crossorigin="" src="./js/account-setting.min.js?v=1759489116329"></script>
+		<script type="module" crossorigin="" src="./js/account-setting.min.js?v=1759489444272"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
 		<link rel="modulepreload" crossorigin="" href="./js/functions.min.js">
 		<link rel="modulepreload" crossorigin="" href="./js/tabs.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/input.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/_functions.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/form.min.js">
 		<link rel="modulepreload" crossorigin="" href="./js/aside.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759489116329">
-		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1759489116329">
-		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1759489116329">
-		<link rel="stylesheet" crossorigin="" href="./css/account-setting.min.css?v=1759489116329">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1759489116329">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759489444272">
+		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1759489444272">
+		<link rel="stylesheet" crossorigin="" href="./css/input.min.css?v=1759489444272">
+		<link rel="stylesheet" crossorigin="" href="./css/form.min.css?v=1759489444272">
+		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1759489444272">
+		<link rel="stylesheet" crossorigin="" href="./css/account-setting.min.css?v=1759489444272">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1759489444272">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -148,8 +153,7 @@
 									<div data-fls-block="" class="tabs__body setting-password">
 										<h4 class="setting-password__title setting-password__title--title-20">Настройки входа</h4>
 										<div class="setting-password__label setting-password__label--title-18">Вход по паролю</div>
-										<button type="button" data-fls-button="" class="setting-password__button button">Именить пароль</button>
-										<!-- data-fls-popup-link="change" -->
+										<button type="button" data-fls-button="" data-fls-popup-link="change" class="setting-password__button button">Именить пароль</button>
 									</div>
 								</div>
 							</div>
@@ -158,6 +162,35 @@
 				</div>
 			</main>
 		</div>
-		<!-- <include src="@components/layout/popup/popup.html" locals='{}'></include> -->
+		<div data-fls-popup="change" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body change">
+					<h3 class="change__title change__title--title-20">Сменить пароль</h3>
+					<form data-fls-form="" action="#" class="change__form">
+						<div class="change__passcode passcode">
+							<div class="passcode__label">
+								<input data-fls-input="" required autocomplete="off" type="password" name="password" data-error="Помилка" placeholder="Текущий пароль" class="input input--passcode">
+								<button type="button" class="passcode__eye"></button>
+							</div>
+						</div>
+						<div class="change__passcode passcode">
+							<div class="passcode__label">
+								<input data-fls-input="" required autocomplete="off" type="password" name="password" data-error="Помилка" placeholder="Текущий пароль" class="input input--passcode">
+								<button type="button" class="passcode__eye"></button>
+							</div>
+						</div>
+						<div class="change__text">
+							<p>
+								Длина пароля — от 8 до 32 символов. Пароль должен содержать как минимум 2 заглавные и 3 строчные буквы, а также 2 цифры
+							</p>
+						</div>
+						<div class="change__actions">
+							<button data-fls-button="" type="submit" class="form-change__button button">Сохранить</button>
+							<button data-fls-popup-close="" data-fls-button="" type="button" class="form-change__button button button--gray">Отменить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

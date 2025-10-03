@@ -1,13 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".passcode__eye").forEach((button) => {
-    const input = button.previousElementSibling;
-    if (!input || input.tagName !== "INPUT") return;
-    button.addEventListener("click", () => {
-      const isPassword = input.type === "password";
-      input.type = isPassword ? "text" : "password";
-      button.classList.toggle("active", isPassword);
-    });
-  });
   document.querySelectorAll(".plsdata__input").forEach((input) => {
     const wrapper = input.closest(".plsdata");
     if (!wrapper) return;
