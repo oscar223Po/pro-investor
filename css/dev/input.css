@@ -34,7 +34,7 @@ textarea {
   font-size: 0.9375rem;
   min-height: 3rem;
 }
-.input--passcode {
+.input--pwd {
   padding-right: 3.0625rem;
 }
 .input--disable {
@@ -62,15 +62,15 @@ textarea.input {
   resize: vertical;
   padding: 0rem 0rem;
 }
-.passcode span {
+.pwd span {
   display: block;
   color: #747474;
   margin-bottom: 0.625rem;
 }
-.passcode__label {
+.pwd__label {
   position: relative;
 }
-.passcode__eye {
+.pwd__eye {
   top: 0.1875rem;
   bottom: 0;
   right: 0.9375rem;
@@ -79,11 +79,11 @@ textarea.input {
   position: absolute;
   transition: color 0.3s, opacity 0.3s;
 }
-.passcode__eye::before {
+.pwd__eye::before {
   content: "\f10a";
   font-family: "iconfont";
 }
-.passcode__eye.active::before {
+.pwd__eye.active::before {
   content: "\f10b";
 }
 .plsdata {
@@ -110,7 +110,7 @@ textarea.input {
   opacity: 0;
 }
 @media (any-hover: hover){
-  .passcode__eye:hover {
+  .pwd__eye:hover {
     opacity: 0.75;
   }
 }
