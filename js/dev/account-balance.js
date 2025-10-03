@@ -1,5 +1,5 @@
 import "./app.min.js";
-import { F as FLS, d as dataMediaQueries, h as slideToggle, f as slideUp } from "./functions.min.js";
+import { F as FLS, e as dataMediaQueries, i as slideToggle, h as slideUp } from "./functions.min.js";
 /* empty css           */
 import "./aside.min.js";
 function spollers() {

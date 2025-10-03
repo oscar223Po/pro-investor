@@ -1,4 +1,4 @@
-import { F as FLS, f as slideUp, h as slideToggle } from "./functions.min.js";
+import { F as FLS, h as slideUp, i as slideToggle } from "./functions.min.js";
 import { f as formValidate } from "./_functions.min.js";
 class SelectConstructor {
   constructor(props, data = null) {
