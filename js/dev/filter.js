@@ -1,5 +1,5 @@
-const links = document.querySelectorAll(".filter__link");
-if (links !== null) {
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".filter__link");
   links.forEach((link) => {
     link.addEventListener("click", function(e) {
       e.preventDefault();
@@ -7,4 +7,4 @@ if (links !== null) {
       this.classList.add("filter__link--active");
     });
   });
-}
+});

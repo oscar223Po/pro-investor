@@ -1,5 +1,5 @@
-const inputs = document.querySelectorAll(".code__inputs input");
-if (inputs !== null) {
+document.addEventListener("DOMContentLoaded", () => {
+  const inputs = document.querySelectorAll(".code__inputs input");
   inputs.forEach((input, index) => {
     input.addEventListener("input", (e) => {
       const value = e.target.value.replace(/\D/g, "");
@@ -30,4 +30,4 @@ if (inputs !== null) {
       }
     });
   });
-}
+});
