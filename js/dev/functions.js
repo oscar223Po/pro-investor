@@ -167,11 +167,11 @@ export {
   bodyUnlock as a,
   bodyLock as b,
   bodyLockStatus as c,
-  getHash as d,
-  dataMediaQueries as e,
-  setHash as f,
-  gotoBlock as g,
-  slideUp as h,
-  slideToggle as i,
+  dataMediaQueries as d,
+  setHash as e,
+  slideUp as f,
+  getHash as g,
+  slideToggle as h,
+  gotoBlock as i,
   slideDown as s
 };

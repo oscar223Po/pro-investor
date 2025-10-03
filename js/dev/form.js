@@ -1,4 +1,4 @@
-import { g as gotoBlock } from "./functions.min.js";
+import { i as gotoBlock } from "./functions.min.js";
 import { f as formValidate } from "./_functions.min.js";
 function formInit() {
   function formSubmit() {
