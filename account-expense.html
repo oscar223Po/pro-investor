@@ -5,18 +5,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
 		<title>Pro Investor — Expense</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1759498315466"></script>
-		<script type="module" crossorigin="" src="./js/functions.min.js?v=1759498315466"></script>
-		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1759498315466"></script>
-		<script type="module" crossorigin="" src="./js/filter.min.js?v=1759498315466"></script>
-		<script type="module" crossorigin="" src="./js/aside.min.js?v=1759498315466"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759498315466">
-		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1759498315466">
-		<link rel="stylesheet" crossorigin="" href="./css/filter.min.css?v=1759498315466">
-		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1759498315466">
-		<link rel="stylesheet" crossorigin="" href="./css/account-expense.min.css?v=1759498315466">
-		<link rel="stylesheet" crossorigin="" href="./css/number.min.css?v=1759498315466">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1759498315466">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1759502129005"></script>
+		<script type="module" crossorigin="" src="./js/functions.min.js?v=1759502129005"></script>
+		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1759502129005"></script>
+		<script type="module" crossorigin="" src="./js/filter.min.js?v=1759502129005"></script>
+		<script type="module" crossorigin="" src="./js/aside.min.js?v=1759502129005"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759502129005">
+		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1759502129005">
+		<link rel="stylesheet" crossorigin="" href="./css/filter.min.css?v=1759502129005">
+		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1759502129005">
+		<link rel="stylesheet" crossorigin="" href="./css/account-expense.min.css?v=1759502129005">
+		<link rel="stylesheet" crossorigin="" href="./css/number.min.css?v=1759502129005">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1759502129005">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -92,10 +92,16 @@
 										<div data-fls-block="" data-fls-number="" class="expense-market__number number">
 											<div class="number__label">Всего на торговых счетах</div>
 											<div class="number__total">
-												<span>25 560</span>
-												RUB
+												<div class="number__current-total">
+													<span>25 560</span>
+													RUB
+												</div>
+												<div class="number__quotes-total">
+													<span>500 USD</span>
+													<span>1000 EUR</span>
+												</div>
 											</div>
-											<a href="#" data-fls-block="" class="number__count count count--hover">
+											<div data-fls-block="" class="number__count count">
 												<div class="count__main count__main--icon-rub">
 													<div class="count__content">
 														<h5 class="count__title count__title--title-20">Номер счета</h5>
@@ -103,6 +109,10 @@
 															<span>23245998839284</span>
 															<button type="button" class="count__copy count__copy--icon-copy"></button>
 														</div>
+													</div>
+													<div class="count__deposit">
+														<div class="count__label-deposit">Депозит</div>
+														<span class="count__span-deposit">25 560 RUB</span>
 													</div>
 												</div>
 												<div class="count__info">
@@ -118,31 +128,7 @@
 														</div>
 													</div>
 												</div>
-											</a>
-											<a href="#" data-fls-block="" class="number__count count count--hover">
-												<div class="count__main count__main--icon-rub">
-													<div class="count__content">
-														<h5 class="count__title count__title--title-20">Номер счета</h5>
-														<div class="count__code">
-															<span>23245998839284</span>
-															<button type="button" class="count__copy count__copy--icon-copy"></button>
-														</div>
-													</div>
-												</div>
-												<div class="count__info">
-													<div class="count__subttile">Доход</div>
-													<div class="count__income">
-														<div class="count__span count__span--title-20">
-															<span>5000</span>
-															RUB
-														</div>
-														<div class="count__span count__span--title-20">
-															<span>20</span>
-															%
-														</div>
-													</div>
-												</div>
-											</a>
+											</div>
 										</div>
 									</div>
 									<div class="tabs__body expense-bank">

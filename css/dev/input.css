@@ -88,6 +88,7 @@ textarea.input {
 }
 .plsdata {
   position: relative;
+  pointer-events: none;
 }
 .plsdata__content {
   top: 0;
@@ -106,8 +107,12 @@ textarea.input {
 .plsdata__content b {
   font-weight: 500;
 }
-.plsdata__content.disable {
-  opacity: 0;
+.plsdata__content {
+  /*
+  &.disable {
+  	opacity: 0;
+  }
+  */
 }
 @media (any-hover: hover){
   .pwd__eye:hover {

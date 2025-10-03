@@ -5,13 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
 		<title>Pro Investor — Home</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1759498315467"></script>
-		<script type="module" crossorigin="" src="./js/aside.min.js?v=1759498315467"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759498315467">
-		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1759498315467">
-		<link rel="stylesheet" crossorigin="" href="./css/account-home.min.css?v=1759498315467">
-		<link rel="stylesheet" crossorigin="" href="./css/number.min.css?v=1759498315467">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1759498315467">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1759502129004"></script>
+		<script type="module" crossorigin="" src="./js/aside.min.js?v=1759502129004"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759502129004">
+		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1759502129004">
+		<link rel="stylesheet" crossorigin="" href="./css/account-home.min.css?v=1759502129004">
+		<link rel="stylesheet" crossorigin="" href="./css/number.min.css?v=1759502129004">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1759502129004">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -82,8 +82,14 @@
 								<div data-fls-block="" data-fls-number="" class="home__number number">
 									<div class="number__label">Всего на торговых счетах</div>
 									<div class="number__total">
-										<span>25 560</span>
-										RUB
+										<div class="number__current-total">
+											<span>25 560</span>
+											RUB
+										</div>
+										<div class="number__quotes-total">
+											<span>500 USD</span>
+											<span>1000 EUR</span>
+										</div>
 									</div>
 									<div data-fls-block="" class="number__count count">
 										<div class="count__main count__main--icon-rub">
@@ -93,6 +99,10 @@
 													<span>23245998839284</span>
 													<button type="button" class="count__copy count__copy--icon-copy"></button>
 												</div>
+											</div>
+											<div class="count__deposit">
+												<div class="count__label-deposit">Депозит</div>
+												<span class="count__span-deposit">25 560 RUB</span>
 											</div>
 										</div>
 										<div class="count__info">
