@@ -14,27 +14,14 @@
   color: #747474;
 }
 .number__total {
+  display: grid;
   row-gap: 0.625rem;
-  display: flex;
-  flex-wrap: wrap;
   column-gap: 1.1875rem;
   align-items: center;
 }
 .number__current-total {
   font-weight: 600;
   color: #26a435;
-}
-.number__quotes-total {
-  display: flex;
-  font-weight: 500;
-  line-height: 1.2;
-  flex-direction: column;
-}
-.number__quotes-total > * {
-  margin-bottom: 0.125rem;
-}
-.number__quotes-total > *:last-child {
-  margin-bottom: 0;
 }
 .count {
   gap: 1.0625rem;
@@ -110,13 +97,15 @@
   transition: color 0.3s;
 }
 .count__deposit {
+  font-weight: 700;
   align-self: center;
 }
 .count__label-deposit {
   margin-bottom: 0.5rem;
 }
 .count__span-deposit {
-  font-weight: 600;
+  font-weight: 700;
+  color: #26a435;
 }
 .count__info {
   width: 100%;
@@ -154,12 +143,12 @@
 }
 @media (max-width: 20em){
   .number__current-total {
-    font-size: 2.1875rem;
+    font-size: 1.875rem;
   }
 }
 @media (min-width: 20em) and (max-width: 90em){
   .number__current-total {
-    font-size: clamp( 2.1875rem , 2.0982142857125rem  +  0.4464285714vw , 2.5rem );
+    font-size: clamp( 1.875rem , 1.69642857143125rem  +  0.8928571429vw , 2.5rem );
   }
 }
 @media (min-width: 47.99875em) and (max-width: 90em){
