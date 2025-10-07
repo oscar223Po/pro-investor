@@ -39,12 +39,6 @@
 .body-history__title {
   margin-bottom: 0.9375rem;
 }
-.body-history__items > * {
-  margin-bottom: 0.9375rem;
-}
-.body-history__items > *:last-child {
-  margin-bottom: 0;
-}
 @media (any-hover: hover){
   .tabs-history__title:hover {
     opacity: 0.75;

@@ -5,18 +5,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/shortcut.svg">
 		<title>Pro Investor — Expense</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1759775245329"></script>
-		<script type="module" crossorigin="" src="./js/functions.min.js?v=1759775245329"></script>
-		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1759775245329"></script>
-		<script type="module" crossorigin="" src="./js/filter.min.js?v=1759775245329"></script>
-		<script type="module" crossorigin="" src="./js/aside.min.js?v=1759775245329"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759775245329">
-		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1759775245329">
-		<link rel="stylesheet" crossorigin="" href="./css/filter.min.css?v=1759775245329">
-		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1759775245329">
-		<link rel="stylesheet" crossorigin="" href="./css/account-expense.min.css?v=1759775245329">
-		<link rel="stylesheet" crossorigin="" href="./css/number.min.css?v=1759775245329">
-		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1759775245329">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1759816721242"></script>
+		<script type="module" crossorigin="" src="./js/functions.min.js?v=1759816721242"></script>
+		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1759816721242"></script>
+		<script type="module" crossorigin="" src="./js/filter.min.js?v=1759816721242"></script>
+		<script type="module" crossorigin="" src="./js/aside.min.js?v=1759816721242"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759816721242">
+		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1759816721242">
+		<link rel="stylesheet" crossorigin="" href="./css/filter.min.css?v=1759816721242">
+		<link rel="stylesheet" crossorigin="" href="./css/aside.min.css?v=1759816721242">
+		<link rel="stylesheet" crossorigin="" href="./css/account-expense.min.css?v=1759816721242">
+		<link rel="stylesheet" crossorigin="" href="./css/number.min.css?v=1759816721242">
+		<link rel="stylesheet" crossorigin="" href="./css/button.min.css?v=1759816721242">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -91,35 +91,67 @@
 										</div>
 										<div data-fls-block="" data-fls-number="" class="expense-market__number number">
 											<div class="number__label">Всего на торговых счетах</div>
-											<div class="number__total">
-												<div class="number__current-total">
+											<div class="number__total total-number">
+												<div class="total-number__item">
 													<span>25 560</span>
 													RUB
 												</div>
 											</div>
-											<div data-fls-block="" class="number__count count">
-												<div class="count__main count__main--icon-rub">
-													<div class="count__content">
-														<h5 class="count__title count__title--title-20">Номер счета</h5>
-														<div class="count__code">
-															<span>23245998839284</span>
-															<button type="button" class="count__copy count__copy--icon-copy"></button>
+											<div class="number__count count">
+												<a href="#" data-fls-block="" class="count__article count__article--hover">
+													<div class="count__main">
+														<div class="count__number">
+															<div class="count__icon-number count__icon-number--icon-rub"></div>
+															<div class="count__body-number">
+																<div class="count__label-number count__label-number--title-20">Номер счета</div>
+																<div class="count__code-number">
+																	<span>23245998839284</span>
+																	<button type="button" class="--icon-copy"></button>
+																</div>
+															</div>
 														</div>
 													</div>
-												</div>
-												<div class="count__info">
-													<div class="count__subttile">Доход</div>
-													<div class="count__income">
-														<div class="count__span count__span--title-20">
-															<span>5000</span>
-															RUB
-														</div>
-														<div class="count__span count__span--title-20">
-															<span>20</span>
-															%
+													<div class="count__item">
+														<div class="count__label-item">Доход</div>
+														<div class="count__spans-item">
+															<div class="count__span-item">
+																<span>5000</span>
+																RUB
+															</div>
+															<div class="count__span-item">
+																<span>5</span>
+																%
+															</div>
 														</div>
 													</div>
-												</div>
+												</a>
+												<a href="#" data-fls-block="" class="count__article count__article--hover">
+													<div class="count__main">
+														<div class="count__number">
+															<div class="count__icon-number count__icon-number--icon-rub"></div>
+															<div class="count__body-number">
+																<div class="count__label-number count__label-number--title-20">Номер счета</div>
+																<div class="count__code-number">
+																	<span>23245998839284</span>
+																	<button type="button" class="--icon-copy"></button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="count__item">
+														<div class="count__label-item">Доход</div>
+														<div class="count__spans-item">
+															<div class="count__span-item">
+																<span>5000</span>
+																RUB
+															</div>
+															<div class="count__span-item">
+																<span>5</span>
+																%
+															</div>
+														</div>
+													</div>
+												</a>
 											</div>
 										</div>
 									</div>
@@ -143,12 +175,13 @@
 													<a href="#" class="filter__link">USD</a>
 												</li>
 											</ul>
-											<div class="expense-bank__counts">
-												<a href="#" data-fls-block="" data-fls-number="" class="count count--hover">
-													<div class="count__main count__main--icon-rub">
-														<div class="count__content">
-															<h5 class="count__title count__title--title-20">346727288589824657</h5>
-															<div class="count__name">Сбербанк</div>
+											<div data-fls-number="" class="expense-bank__count count">
+												<a href="#" data-fls-block="" class="count__article count__article--hover">
+													<div class="count__number">
+														<div class="count__icon-number count__icon-number--icon-rub"></div>
+														<div class="count__body-number">
+															<div class="count__label-number count__label-number--title-20">346727288589824657</div>
+															<div class="count__bank-number">Сбербанк</div>
 														</div>
 													</div>
 												</a>
